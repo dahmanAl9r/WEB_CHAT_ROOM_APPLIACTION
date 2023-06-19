@@ -1,0 +1,543 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif; 
+}
+nav{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap:wrap ;
+    padding: 0px 0;
+}
+.banner::before{
+    background-image: url();
+    transition: 0.5s;
+}
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.80),rgba(0,0,0,0.65)),url("images/Menu_background.jpg");
+    background-size: cover;
+    background-position: center;
+    transition: 0.5s; 
+}
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav ul{
+    flex:1;
+    text-align: right;
+    padding-right: 20px;
+}
+.navbar ul li{
+    display: inline-block;
+    position: relative;
+    margin: 15px 20px;
+    list-style: none;
+}
+.navbar ul li a{
+    text-decoration: none;
+    transition: 0.3s;
+    color: white;
+    font-size: 18px;
+}
+nav ul li a::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    background:white;
+    transition: width 0.3s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+.navbar ul li{
+    padding: 5px;
+}
+.navbar ul li:hover:after{
+    width: 100%;
+}
+.content{
+    width: 100%;
+    position: absolute;
+    top: 45%;
+    transform: translateY(-50%);
+    text-align: center;
+    color:#00000000;
+}
+.content h1{
+    font-size: 90px;
+    color: transparent;
+    -webkit-text-stroke:1px #fff ;
+    background: url(images/back.png);
+    -webkit-background-clip: text;
+    animation: back 20s linear infinite;
+    transition: 0.3s;
+    position: relative;
+}
+.content h1:hover{
+    font-size: 94px;
+    transition: 0.3s;
+
+}
+@keyframes back{
+    100%{
+        background-position: 2000px 0;
+    }
+}
+.content p{
+    color: #fff;
+    font-size: 18px;
+    position: relative;
+    top: 10px;
+    transition: 0.35s;
+}
+.content p:hover{
+    font-size: 19px;
+    transition: 0.4s;
+}
+.buttons button {
+    width: 150px;
+    padding: 15px 0;
+    text-align: center;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid rgba(255, 94, 0, 0.904);
+    background: transparent;
+    color:#fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    top: 45px;
+    margin-right: 20px;
+}
+.buttons button:hover{
+    cursor: pointer;
+    overflow: hidden;
+    border: none;
+}
+span{
+    background: rgba(255, 94, 0, 0.904);
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+.buttons button:hover span{
+    width: 100%;
+}
+.banner2{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.80),rgba(0,0,0,0.65)),url("images/Sign_up_login_background.jpg");
+    background-size: cover;
+    background-position: center;
+    transition: 0.5s;
+}
+.box{
+    background-color: #3333335c;
+    width: 40%;
+    height: 82vh;
+    position: relative;
+    top: 70px;
+    margin: auto;
+    border-radius: 20px;
+}
+.title{
+    background-color: transparent;
+    border: 3px solid #20262E;
+    width: 100%;
+    height: 8vh;
+    padding: 15px;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    border-radius: 20px 20px 0 0;
+    content: 'Title';
+    user-select: none;  
+}
+/*#20262E*/
+.box-info input[type='text']{
+    background-color: transparent;
+    border-bottom: 3px solid #20262E;
+    border-left: none;
+    border-top: none;
+    padding-left: 15px;
+    border-right: none;
+    width: 80%;
+    display: block;
+    position: relative;
+    top: 0;
+    transition: 0.4s;
+    left: 50px;
+    border-radius: 0 0 5px 0;
+    font-size: 18px;
+    outline: none;
+    margin-top: 30px;
+    color: #fff;
+}
+.box-info input[type='text']:hover{
+    border-bottom: 3px solid rgb(79, 25, 130);
+    border-left: none;
+    border-top: none;
+    border-right: none;
+}
+.box-info input[type='password']{
+    background-color: transparent;
+    border-bottom: 3px solid #20262E;
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    width: 80%;
+    display: block;
+    padding-left: 15px;
+    position: relative;
+    top: 0;
+    transition: 0.4s;
+    left: 50px;
+    border-radius: 0 0 5px 0;
+    font-size: 18px;
+    outline: none;
+    margin-top: 30px;
+    color: #fff;
+}
+.box-info input[type='password']:hover{
+    border-bottom: 3px solid rgb(76, 24, 125);
+    border-left: none;
+    border-top: none;
+    border-right: none;
+}
+::-ms-reveal {
+    filter: invert(100%);
+}
+.box-info input[type='email']{
+    background-color: transparent;
+    border-bottom: 3px solid #20262E;
+    border-left: none;
+    border-top: none;   
+    border-right: none;
+    width: 80%;
+    display: block;
+    padding-left: 15px;
+    position: relative;
+    top: 0;
+    transition: 0.4s;
+    left: 50px;
+    border-radius: 0 0 5px 0;
+    font-size: 18px;
+    outline: none;
+    margin-top: 30px;
+    color: #fff;
+}
+.box-info input[type='email']:hover{
+    border-bottom: 3px solid rgb(76, 24, 125);
+    border-left: none;
+    border-top: none;
+    border-right: none;
+}
+.box-info input[type='submit']{
+    width: 78%;
+    position: relative;
+    left: 65px;
+    top: 70px;
+    background: transparent;
+    border: 1px solid gray;
+    color: #fff;
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+.box-info input[type='submit']:hover{
+    cursor: pointer;
+    background: #191e24;
+    border:1px solid rgb(76, 24, 125);
+    transition: 0.3s;
+}
+.box-info button{
+    width: 78%;
+    position: relative;
+    left: 65px;
+    top: 70px;
+    background: transparent;
+    border: 1px solid gray;
+    color: #fff;
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+.box-info button:hover{
+    cursor: pointer;
+    background: #191e24;
+    border:1px solid rgb(76, 24, 125);
+    transition: 0.3s;
+}
+.box-info form p{
+    font-size: 20px;
+    color: white;
+    margin-left: 100px ;
+    margin-top: 110px;
+}
+ 
+.box-info form p a{
+    color:crimson;
+}
+.box-info form .error-msg{
+    display: block;
+    width: 100%;
+    color: crimson;
+    margin:10px 0;
+    font-size: 19px;
+    text-align: center;
+}
+.banner3{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.6)),url("images/Chating_Background.jpg");
+    background-size: cover;
+    background-position: center;
+    overflow-y: hidden;
+    transition: 0.5s; 
+}
+.sending{
+    margin-bottom: 90px;
+    bottom: 50px;
+    margin-top: 550px;
+    position: fixed;
+}
+.sending input[type='text']{
+    background-color: transparent;
+    border-bottom: 3px solid #20262E;
+    border-left: none;
+    border-top: none;
+    padding-left: 30px;
+    border-right: none;
+    display: block;
+    position: fixed;
+    width: 88%;
+    transition: 0.4s;
+    left: 50px;
+    bottom: 50px;
+    border-radius: 0 0 5px 0;
+    font-size: 18px;
+    outline: none;
+    color: #fff;
+}
+.sending input[type='text']:hover{
+    border-bottom: 3px solid rgb(76, 24, 125);
+    border-left: none;
+    border-top: none;
+    border-right: none;
+}
+.sending button{
+    background-color: transparent;
+    position: fixed;
+    display: flex;
+    right: 50px;
+    border: none;
+    bottom: 30px;
+    cursor: pointer;
+}
+.sending button i img{
+    width: 40px;
+    transition: 0.3s;
+}
+.sending button i img:hover{
+    width: 42px;
+    transition: 0.3s;
+}
+.messages{
+    width:100%;
+    color: white;
+    font-size: 18px;
+    position: relative;
+}
+.message-text{
+    position: relative;
+    color: gray;
+    transition: 0.3s;
+    word-break: break-all;
+}
+.message-text:hover{
+    transition: 0.3s;
+}
+.user-name{
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+    width: 90%;
+    color: gray;
+    font-weight: 1000;
+    transition: 0.8s;
+}
+.user-name:hover{
+    text-shadow: 1px 1px 2px rgb(32, 0, 42), 0 0 30px rgb(166, 0, 255), 0 0 10px rgb(63, 0, 130);
+    transition: 0.4s;
+}
+.message-date{
+    text-align: right;
+    float: right;
+    color: rgba(251, 0, 255, 0.695);
+    text-shadow: 1px 1px 2px rgb(32, 0, 42), 0 0 30px rgb(166, 0, 255), 0 0 10px rgb(63, 0, 130);
+    position: static;
+}
+.message{
+    width: 100%;
+    font-size: 18px;
+    padding-left: 0px;
+    margin-top: 50px;
+    position: relative;
+    word-break: break-all;
+    margin-bottom: 50px;
+}
+section{
+    padding: 30px;
+}
+.borderer{
+    background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.65));
+    width: 70%;
+    height: 80%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    border: 1px solid #20262E;
+    position: absolute;
+    left: 30px;
+    top: 50px;
+    padding:50px;
+    transition: 0.4s;
+}
+.borderer:hover{
+    border: 1px solid rgb(76, 24, 125);
+    transition: 0.4s;
+}
+.online-offline-users{
+    border: 1px solid #20262E;
+    width: 26%;
+    height: 80%;
+    position: absolute;
+    background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.65));
+    left: 1050px;
+    top: 50px;
+    padding: 30px;
+    transition: 0.4s;
+}
+.online-offline-users:hover{
+    border: 1px solid rgb(76, 24, 125);
+    transition: 0.4s;
+    overflow-y: scroll;
+}
+.admin{
+    color: white;
+}
+.zaki{
+    color: aqua;
+    margin-top: 20px;
+    text-shadow: 1px 1px 2px rgb(0, 52, 54), 0 0 50px aqua, 0 0 50px aqua;
+}
+.Me{
+    margin-top: 20px;
+    width: 100%;
+}
+.me{
+    color: white;
+    text-align: center;
+    position: relative;
+    word-break: break-all;
+}
+.my_user_account_name{
+    word-break: break-all;
+    word-break: break-all;
+    color: violet;
+    text-shadow: 1px 1px 2px black, 0 0 25px rgb(255, 0, 251), 0 0 5px rgb(255, 0, 238);
+}
+.my_user_account_email{
+    width: 100%;
+    color: gray;
+    word-break: break-all;
+}
+.separator{
+    height: 1px;
+    width: 100%;
+    margin-top: 20px;
+    background-color: white;
+}
+/* .Admin{
+    color: aqua;
+    display: flex;
+    margin-top: 20px;
+    padding-left: 50px;
+    text-shadow: 1px 1px 2px rgb(0, 40, 42), 0 0 30px aqua, 0 0 10px aqua;
+} */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+::-webkit-scrollbar-thumb {
+    background: #2b2b2b;
+    border-radius: 10px;
+    padding-left: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #4a4a4a; 
+}
+@media screen and (max-width: 1190px) {
+    .box{
+        width: 50%;
+    }
+}
+@media screen and (max-width:1000px) {
+    .box{
+        width: 65%;
+    }
+}
+@media screen and (max-width:900px) {
+    .box{
+        width: 70%;
+    }
+}
+@media screen and (max-width:800px) {
+    .box{
+        width: 70%;
+    }
+}
+@media screen and (max-width:700px) {
+    .box{
+        width: 80%;
+    }
+}
+@media screen and (max-width:600px) {
+    .box{
+        width: 90%;
+    }
+    .box-info form p{
+        font-size: 15px;
+        color: white;
+        margin-left: 100px ;
+        margin-top: 110px;
+    }
+     
+    .box-info form p a{
+        color:red;
+    }
+    .box-info input[type='submit']{
+        background-color: #35414e;
+        transition: 0.3s;
+    }
+}
