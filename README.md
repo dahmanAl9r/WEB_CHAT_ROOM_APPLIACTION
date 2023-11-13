@@ -2,5 +2,5 @@
 A web chat room application made with html , css, javascript ajax , php , mysql
 
 ```
-Made By ZAKARIA ALILICHE.
+Made By Yuji0x01.
 ```
